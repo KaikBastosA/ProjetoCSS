@@ -4,101 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
     <title>Kaik Bastos</title>
 </head>
 
 <body>
-    <center>
-        <font face="Arial, Helvetica, sans-serif">
-            <header>
-                <h1>Kaik Bastos</h1>
+    <header class="cabecalho">
+        <h1 class="title">Kaik Bastos</h1>
 
-                <nav>
-                    <a href="../main.html">Início</a>
-                </nav>
-            </header>
-            <hr>
-            <main>
-                <section>
-                    <div>
-                        <img src="../Imagens/20231022_122508~4.jpg" alt="Foto de Kaik Bastos" width="200"
-                            height="300px">
-                    </div>
-                    <br>
-                    <div>
-                        <font face="Arial, Helvetica, sans-serif"> Olá! Meu nome é Kaik Bastos, sou estudante de Ciência
-                            da
-                            Computação na Universidade Federal Fluminense, com interesse em desenvolvimento de software
-                            e
-                            inteligência <br> artificial. Possuo experiências com Python, C, Desenvolvimento Web e com
-                            programas da Adobe como Photoshop e Illustrator. Meu objetivo é buscar novos conhecimentos
-                            para
-                            <br> aprimorar minhas habilidades, já que eu gosto de aprender coisas novas e não tenho medo
-                            de
-                            sair da zona de conforto quando necessário!
-                        </font>
-                    </div>
-                </section>
-                <section>
-                    <div>
-                        <h2>Meus Hobbies</h2>
-                        <table border="0" cellspacing="5" cellpadding="0">
-                            <tr>
-                                <td>
-                                    <ul>
-                                        <li>Ler livros</li>
-                                        <li>Programar</li>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="apresentacao">
+            <div>
+                <img src="Imagens/20231022_122508~4.jpg" alt="Foto de Kaik Bastos" width="200" height="300px">
+            </div>
+            <br>
+            <div>
+                Olá! Meu nome é Kaik Bastos, sou estudante de Ciência
+                da
+                Computação na Universidade Federal Fluminense, com interesse em desenvolvimento de software
+                e
+                inteligência <br> artificial. Possuo experiências com Python, C, Desenvolvimento Web e com
+                programas da Adobe como Photoshop e Illustrator. Meu objetivo é buscar novos conhecimentos
+                para
+                <br> aprimorar minhas habilidades, já que eu gosto de aprender coisas novas e não tenho medo
+                de
+                sair da zona de conforto quando necessário!
 
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>Jogar</li>
-                                        <li>Cozinhar</li>
-                                        <li>Assistir filmes</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div>
-                        <h2>Meu top 5 Jogos</h2>
-                        <table border="0" cellspacing="5" cellpadding="0">
-                            <tr>
-                                <td>
-                                    <ol>
-                                        <li>Dishonored</li>
-                                        <li>Metal Gear Solid V: The Phanton Pain</li>
-                                        <li>Red Dead Redemption 2</li>
-                                        <li>Terraria</li>
-                                        <li>Cyberpunk 2077</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </section>
-                <section>
-                    <aside>
-                        <h2>Feedback</h2>
-                        <p>Gostaria de sugerir uma melhoria? <br> Utilize o formulário abaixo:</p>
-                        <form>
-                            <input type="text" placeholder="Insira seu nome completo" size="43" required> <br>
-                            <textarea placeholder="Insira o que deseja falar" required cols="45" rows="10"></textarea> <br>
-                            <button type="submit">Enviar</button>
-                        </form>
-                    </aside>
-                </section>
-                <hr>
-            </main>
-            <footer>
-                <a href="../main.html"><img src="../Imagens/Logo-IK.svg" alt="logo do grupo" width="50px" height="50px"></a>
-                <a href="https://www.linkedin.com/in/kaik-bastos-0184b5336/" target="_blank"><img src="../Imagens/linkedin.png" alt="logo do linkedin" width="50px" height="50px"></a>
-                <a href="https://github.com/KaikBastosA" target="_blank"><img src="../Imagens/github.png" alt="logo do github" width="50px" height="50px"></a>
-                <a href="../Kaik/contato.html"><h2>Entre em contato comigo</h2></a>
-            </footer>
-        </font>
-    </center>
+            </div>
+        </section>
+        <section class="interesse">
+            <div>
+                <h2>Meus Hobbies</h2>
+                <table border="0" cellspacing="5" cellpadding="0">
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Ler livros</li>
+                                <li>Programar</li>
+
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Jogar</li>
+                                <li>Cozinhar</li>
+                                <li>Assistir filmes</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h2>Meu top 5 Jogos</h2>
+                <table border="0" cellspacing="5" cellpadding="0">
+                    <tr>
+                        <td>
+                            <ol>
+                                <li>Dishonored</li>
+                                <li>Metal Gear Solid V: The Phanton Pain</li>
+                                <li>Red Dead Redemption 2</li>
+                                <li>Terraria</li>
+                                <li>Cyberpunk 2077</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="Feedback">
+            <aside>
+                <h2>Feedback</h2>
+                <p>Gostaria de sugerir uma melhoria? <br> Utilize o formulário abaixo:</p>
+                <form>
+                    <input type="text" placeholder="Insira seu nome completo" size="43" required> <br>
+                    <textarea placeholder="Insira o que deseja falar" required cols="45" rows="10"></textarea> <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </aside>
+        </section>
+
+    </main>
+    <footer>
+        <a href="../main.html"><img src="Imagens/Logo-IK.svg" alt="logo do grupo" width="50px" height="50px"></a>
+        <a href="https://www.linkedin.com/in/kaik-bastos-0184b5336/" target="_blank"><img src="Imagens/linkedin.png"
+                alt="logo do linkedin" width="50px" height="50px"></a>
+        <a href="https://github.com/KaikBastosA" target="_blank"><img src="Imagens/github.png" alt="logo do github"
+                width="50px" height="50px"></a>
+        <a href="Kaik/contato.html">
+            <h2>Entre em contato comigo</h2>
+        </a>
+    </footer>
 </body>
 
 </html>
