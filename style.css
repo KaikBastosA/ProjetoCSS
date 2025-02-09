@@ -1,20 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Roboto;
     background-color: #f5f5f5;
+    overflow-x: hidden;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-.cabecalho{
+.cabecalho {
     background-color: white;
     color: black;
     width: 100%;
@@ -34,28 +35,38 @@ a{
     color: #0cd0f0;
 }
 
-.cabecalho ul{
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.cabecalho ul {
     display: flex;
     list-style: none;
 }
 
-.cabecalho ul li{
+.cabecalho ul li {
     margin: 0 30px;
 }
 
-.cabecalho ul li a{
+.cabecalho ul li a {
     font-size: 1.2rem;
     font-family: roboto;
 }
 
-.cabecalho ul li a:hover{
+.cabecalho ul li a:hover {
     text-decoration: underline;
     text-decoration-color: #33e3ff;
     cursor: pointer;
 }
 
-.apresentacao{
+.apresentacao {
     width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -64,39 +75,42 @@ a{
     padding: 50px 0;
 }
 
-.apresentacao .img{
+.apresentacao .img {
     width: 50%;
     height: 50%;
     display: flex;
     align-content: center;
     justify-content: center;
 
-}   
+}
 
-.apresentacao img{
+.apresentacao img {
     border-radius: 50%;
     width: 50%;
     margin: 5% 0;
     background-size: cover;
     background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
 }
 
 
-.texto{
+.texto {
     width: 50%;
     margin-right: 10%;
     text-align: justify;
 }
 
-.texto h2{
+.texto h2 {
     font-size: 2rem;
     color: #0cd0f0;
     padding: 30px 0;
 }
 
-.interesse{
+.interesse {
     background-color: white;
     width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -105,19 +119,19 @@ a{
     z-index: 1;
 }
 
-.interesse .hobbies{
+.interesse .hobbies {
     width: 45%;
     text-align: end;
     margin: 5% 0;
 }
 
-.interesse .jogos{
+.interesse .jogos {
     width: 45%;
     text-align: start;
     margin: 5% 0;
 }
 
-.interesse .hobbies ul{
+.interesse .hobbies ul {
     list-style: none;
     display: flex;
     flex-direction: row-reverse;
@@ -126,7 +140,7 @@ a{
     margin: 0;
 }
 
-.interesse .jogos ul{
+.interesse .jogos ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -135,11 +149,13 @@ a{
     margin: 0;
 }
 
-.interesse .jogos h2, .interesse .hobbies h2{
+.interesse .jogos h2,
+.interesse .hobbies h2 {
     margin-bottom: 40px;
 }
 
-.hobby, .jogo{
+.hobby,
+.jogo {
     text-align: center;
     width: 48%;
     height: 180px;
@@ -159,12 +175,14 @@ a{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.hobby:hover, .jogo:hover{
+.hobby:hover,
+.jogo:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
 
-.hobby::before, .jogo::before{
+.hobby::before,
+.jogo::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -173,21 +191,22 @@ a{
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.hobby span, .jogos span{
+.hobby span,
+.jogos span {
     position: relative;
     z-index: 1;
     padding-bottom: 10px;
 }
 
-.hobby:first-child{
+.hobby:first-child {
     margin-right: 0px;
 }
 
-.jogo:first-child{
+.jogo:first-child {
     margin-left: 0px;
 }
 
-.feedback{
+.feedback {
     width: 100%;
     height: auto;
     display: flex;
@@ -197,18 +216,20 @@ a{
 }
 
 
-.feed h2, .feed p, .feed form{
+.feed h2,
+.feed p,
+.feed form {
     margin-top: 20px;
     width: 100%;
 }
 
-.feed h2{
+.feed h2 {
     color: #0cd0f0;
     font-weight: bold;
 }
 
 .feedback .feed form input[type="text"],
-.feedback .feed form textarea{
+.feedback .feed form textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -222,20 +243,20 @@ a{
     font-family: Roboto, montserrat;
 }
 
-.feedback .feed form textarea{
+.feedback .feed form textarea {
     height: 100px;
     resize: none;
     overflow: hidden;
 }
 
-.feedback .feed form:last-child{
+.feedback .feed form:last-child {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.feedback .feed form button{
+.feedback .feed form button {
     width: 10vw;
     padding: 10px;
     background-color: #0cd0f0;
@@ -248,12 +269,12 @@ a{
     font-weight: bold;
 }
 
-.feedback .feed form button:hover{
+.feedback .feed form button:hover {
     background-color: #33e3ff;
     transition: 0.5s;
 }
 
-.rodape{
+.rodape {
     background-color: white;
     width: 100%;
     height: 100px;
@@ -264,18 +285,18 @@ a{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.rodape img{
+.rodape img {
     width: 30px;
     height: 30px;
     margin: 0 10px;
 }
 
-.rodape .redes .rede:hover{
+.rodape .redes .rede:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
 
-.rodape .contato{
+.rodape .contato {
     display: inline-block;
     padding: 10px 20px;
     background-color: #0cd0f0;
@@ -285,22 +306,73 @@ a{
     font-weight: bold;
 }
 
-.rodape .contato:hover{
+.rodape .contato:hover {
     background-color: #33e3ff;
     transition: 0.5s;
 }
 
-.rodape .contato p{
+.rodape .contato p {
     color: white;
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 430px) {
 
-    .apresentacao{
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        position: relative;
+    }
+
+    .cabecalho nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .cabecalho nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+
+        padding: 0;
+    }
+
+    .cabecalho nav ul li {
+        margin: 15px 0;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        background-color: #0cd0f0;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+    }
+
+    #menu-toggle:checked~nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .apresentacao {
         flex-direction: column;
         width: 100%;
     }
-    .apresentacao .img{
+
+    .apresentacao .img {
         width: 100%;
         height: auto;
         display: flex;
@@ -308,18 +380,19 @@ a{
         align-items: center;
     }
 
-    .apresentacao img{
+    .apresentacao img {
         width: 70%;
         height: auto;
         border-radius: 50%;
     }
-    .texto{
+
+    .texto {
         width: 100%;
         padding: 0 10%;
         margin: 0;
     }
 
-    .interesse{
+    .interesse {
         width: 100%;
         height: auto;
         display: flex;
@@ -328,7 +401,8 @@ a{
         padding: 10px;
     }
 
-    .interesse .hobbies, .interesse .jogos{
+    .interesse .hobbies,
+    .interesse .jogos {
         width: 100%;
         margin: 0;
         display: flex;
@@ -336,7 +410,8 @@ a{
         align-items: start;
     }
 
-    .interesse .hobbies ul, .interesse .jogos ul{
+    .interesse .hobbies ul,
+    .interesse .jogos ul {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
@@ -344,34 +419,37 @@ a{
         gap: 10px;
     }
 
-    .hobby, .jogo{
+    .hobby,
+    .jogo {
         width: calc(33.33% - 10px);
         height: 200px;
         margin: 0 auto;
     }
 
-    .interesse .hobbies li:nth-child(4), .interesse .hobbies li:nth-child(5),
-    .interesse .jogos li:nth-child(4), .interesse .jogos li:nth-child(5) {
+    .interesse .hobbies li:nth-child(4),
+    .interesse .hobbies li:nth-child(5),
+    .interesse .jogos li:nth-child(4),
+    .interesse .jogos li:nth-child(5) {
         width: calc(33.33% - 10px);
         margin: 0 auto;
     }
 
-    .interesse .jogos h2, .interesse .hobbies h2{
+    .interesse .jogos h2,
+    .interesse .hobbies h2 {
         margin: 30px 0;
     }
 
-    .feedback{
+    .feedback {
         width: 100%;
         padding: 10px;
     }
 
-    .feedback .feed form button
-    {
+    .feedback .feed form button {
         width: 30vw;
         align-self: center;
     }
 
-    .rodape{
+    .rodape {
         width: 100%;
         height: auto;
         display: flex;
@@ -379,12 +457,114 @@ a{
         padding: 0 5%;
     }
 
-    .contato{
+    .contato {
         margin: 20px 0;
     }
 
-    .rodape .redes{
+    .rodape .redes {
         margin: 10px 0;
     }
+
+}
+
+@media screen and (min-width: 430px) and (max-width: 899px) {
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        position: relative;
+    }
+
+    .cabecalho nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .cabecalho nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+
+        padding: 0;
+    }
+
+    .cabecalho nav ul li {
+        margin: 15px 0;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        background-color: #0cd0f0;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+    }
+
+    #menu-toggle:checked~nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .interesse {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 10px;
+    }
+
+    .interesse .hobbies,
+    .interesse .jogos {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .interesse .hobbies ul,
+    .interesse .jogos ul {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+        gap: 10px;
+    }
+
+    .hobby,
+    .jogo {
+        width: calc(33.33% - 10px);
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .interesse .hobbies li:nth-child(4),
+    .interesse .hobbies li:nth-child(5),
+    .interesse .jogos li:nth-child(4),
+    .interesse .jogos li:nth-child(5) {
+        width: calc(33.33% - 10px);
+        margin: 0 auto;
+    }
+
+    .interesse .jogos h2,
+    .interesse .hobbies h2 {
+        margin: 30px 0;
+    }
+
 
 }
