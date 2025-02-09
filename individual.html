@@ -28,6 +28,7 @@
             <ul>
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre mim</a></li>
             </ul>
         </nav>
     </header>
@@ -92,28 +93,30 @@
                 </ul>
             </div>
         </section>
-        <section class="Feedback">
-            <aside>
+        <section class="feedback">
+            <aside class="feed">
                 <h2>Feedback</h2>
-                <p>Gostaria de sugerir uma melhoria? <br> Utilize o formulário abaixo:</p>
                 <form>
-                    <input type="text" placeholder="Insira seu nome completo" size="43" required> <br>
-                    <textarea placeholder="Insira o que deseja falar" required cols="45" rows="10"></textarea> <br>
+                    <textarea placeholder="Dê um feedback para esse desenvolvedor!" required></textarea>
+                    <input type="text" placeholder="Digite aqui seu nome:" required>
                     <button type="submit">Enviar</button>
                 </form>
             </aside>
         </section>
 
     </main>
-    <footer>
-        <a href="../main.html"><img src="Imagens/Logo-IK.svg" alt="logo do grupo" width="50px" height="50px"></a>
-        <a href="https://www.linkedin.com/in/kaik-bastos-0184b5336/" target="_blank"><img src="Imagens/linkedin.png"
-                alt="logo do linkedin" width="50px" height="50px"></a>
-        <a href="https://github.com/KaikBastosA" target="_blank"><img src="Imagens/github.png" alt="logo do github"
-                width="50px" height="50px"></a>
-        <a href="Kaik/contato.html">
-            <h2>Entre em contato comigo</h2>
-        </a>
+    <footer class="rodape">
+        <div class="redes">
+            <a href="../main.html"><img src="Imagens/Logo-IK.svg" alt="logo do grupo" class="rede"></a>
+            <a href="https://www.linkedin.com/in/kaik-bastos-0184b5336/" target="_blank"><img src="Imagens/linkedin.png"
+                    alt="logo do linkedin" class="rede"></a>
+            <a href="https://github.com/KaikBastosA" target="_blank"><img src="Imagens/github.png" alt="logo do github" class="rede"></a>
+        </div>
+        <div class="contato">
+            <a href="Kaik/contato.html">
+                <p>Entre em contato</p>
+            </a>
+        </div>
     </footer>
 </body>
 
