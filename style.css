@@ -54,30 +54,42 @@ a{
 
 .apresentacao{
     width: 100%;
+    height: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    align-content: center;
     padding: 50px 0;
 }
 
 .apresentacao .img{
-    width: 40%;
-    margin: 5% 0;
+    width: 50%;
+    height: 50%;
     display: flex;
+    align-content: center;
     justify-content: center;
+
+}   
+
+.apresentacao img{
+    border-radius: 50%;
+    width: 50%;
+    margin: 5% 0;
+    background-size: cover;
+    background-position: center;
 }
 
 
 .texto{
     width: 50%;
+    margin-right: 10%;
     text-align: justify;
 }
 
 .texto h2{
     font-size: 2rem;
     color: #0cd0f0;
-    padding: 10% 0;
+    padding: 30px 0;
 }
 
 .interesse{
