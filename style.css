@@ -86,7 +86,7 @@ a {
 
 .apresentacao img {
     border-radius: 50%;
-    width: 50%;
+    width: auto;
     margin: 5% 0;
     background-size: cover;
     background-position: center;
