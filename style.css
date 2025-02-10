@@ -206,6 +206,37 @@ a {
     margin-left: 0px;
 }
 
+.jogo .rank1{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    background-color: gold;
+    padding: 20px 8px;
+    border-radius: 0 0 5px 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.jogo .rank2{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    background-color: silver;
+    padding: 20px 8px;
+    border-radius: 0 0 5px 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.jogo .rank3{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    background-color: #CD7F32;
+    padding: 20px 8px;
+    border-radius: 0 0 5px 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 .feedback {
     width: 100%;
     height: auto;
